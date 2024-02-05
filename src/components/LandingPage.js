@@ -3,16 +3,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./LandingPage.css"; // Update the path based on your project structure
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faMapMarker } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faPhone,
+  faMapMarker,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const LandingPage = () => {
-
   const containerStyles = {
-    maxWidth: '1200px ',
-    margin: '0 auto',
-    padding: '0 auto',
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "0 auto",
   };
 
   const cakeImages = [
@@ -37,7 +44,7 @@ const LandingPage = () => {
   const styles = {
     sliderContainer: {
       position: "relative",
-      marginBottom: '20px', // Adjust margin as needed
+      marginBottom: "20px", // Adjust margin as needed
     },
     blurredImage: {
       position: "absolute",
@@ -54,17 +61,23 @@ const LandingPage = () => {
   return (
     <div style={containerStyles} className="container">
       <header className="header">
-        <h1 className="title">Indulge in the Sweetness of Honey Drops Bakery</h1>
-        <p style={{
-    fontFamily: 'Times New Roman, Serif',
-    fontSize: '18px',
-    lineHeight: '1.6',
-    color: '#555',
-    backgroundColor: '#F8F1F1',
-    textAlign: 'center',
-    borderRadius: '8px',
-    margin: '5px 0'
-}} >Your premier destination for artisanal honey-infused delights</p>
+        <h1 className="title">
+          Indulge in the Sweetness of Honey Drops Bakery
+        </h1>
+        <p
+          style={{
+            fontFamily: "Times New Roman, Serif",
+            fontSize: "18px",
+            lineHeight: "1.6",
+            color: "#555",
+            backgroundColor: "#F8F1F1",
+            textAlign: "center",
+            borderRadius: "8px",
+            margin: "5px 0",
+          }}
+        >
+          Your premier destination for artisanal honey-infused delights
+        </p>
       </header>
 
       <div style={styles.sliderContainer}>
@@ -89,67 +102,74 @@ const LandingPage = () => {
             </div>
           ))}
         </Slider>
-      </div>                                           
-  
+      </div>
 
       <section className="section">
-           <h2 style={{
-    fontFamily: 'Times New Roman, Serif',
-    fontSize: '30px',
-    lineHeight: '1.6',
-    color: '#24086b',
-    backgroundColor: '#F8F1F1',
-    textAlign: 'center',
-    borderRadius: '8px',
-    margin: '5px 0'
-}} >Discover the World of Honey</h2>
+        <h2
+          style={{
+            fontFamily: "Times New Roman, Serif",
+            fontSize: "30px, auto",
+            lineHeight: "1.6 auto",
+            color: "#24086b",
+            backgroundColor: "#F8F1F1",
+            textAlign: "center",
+            borderRadius: "8px",
+            margin: "5px auto",
+          }}
+        >
+          Discover the World of Honey
+        </h2>
 
-           <p style={{
-    fontFamily: 'Times New Roman, Serif',
-    fontSize: '23px',
-    lineHeight: '1.6',
-    color: '#555',
-    textAlign: 'center',
-    padding: '10px',
-    borderRadius: '8px',
-    margin: '5px 0'
-}}>
-  Welcome to Honey Drops!
-</p>
+        <p
+          style={{
+            fontFamily: "Times New Roman, Serif",
+            fontSize: "23px",
+            lineHeight: "1.6",
+            color: "#555",
+            textAlign: "center",
+            padding: "10px",
+            borderRadius: "8px",
+            margin: "5px 0",
+          }}
+        >
+          Welcome to Honey Drops!
+        </p>
 
-<p style={{
-    fontFamily: 'Times New Roman, Serif',
-    fontSize: '18px',
-    lineHeight: '1.6',
-    color: '#555',
-    textAlign: 'center',
-    padding: '10px',
-    borderRadius: '8px',
+        <p
+          style={{
+            fontFamily: "Times New Roman, Serif",
+            fontSize: "18px",
+            lineHeight: "1.6",
+            color: "#555",
+            textAlign: "center",
+            padding: "10px",
+            borderRadius: "8px",
 
-    margin: '5px 0'
-}}>
-where each creation is crafted with
-love and sweetened with the finest honey. Explore a world of flavors
-that celebrate the natural sweetness of honey in every bite..
-</p>
+            margin: "5px 0",
+          }}
+        >
+          where each creation is crafted with love and sweetened with the finest
+          honey. Explore a world of flavors that celebrate the natural sweetness
+          of honey in every bite..
+        </p>
+      </section>
 
-         </section>
+      <section className="section variety-section">
+        <h2
+          style={{
+            fontFamily: "Times New Roman, Serif",
+            fontSize: "30px",
+            lineHeight: "1.6",
+            color: "#24086b",
+            backgroundColor: "#F8F1F1",
+            textAlign: "center",
+            borderRadius: "8px",
+            margin: "5px 0",
+          }}
+        >
+          Indulge in Delightful Varieties
+        </h2>
 
-
-
-         <section className="section variety-section">
-
-         <h2 style={{
-    fontFamily: 'Times New Roman, Serif',
-    fontSize: '30px',
-    lineHeight: '1.6',
-    color: '#24086b',
-    backgroundColor: '#F8F1F1',
-    textAlign: 'center',
-    borderRadius: '8px',
-    margin: '5px 0'
-}} >Indulge in Delightful Varieties</h2>
-        
         <p className="para">
           Immerse yourself in a delightful array of cakes, cupcakes, and donuts.
           Each treat is a masterpiece of flavor and sweetness. Explore our
@@ -160,138 +180,137 @@ that celebrate the natural sweetness of honey in every bite..
         <div className="variety-grid">
           <div className="variety-item-1">
             <img src="/cakes/commoncake.jpg" alt="Special Honey Cake" />
-            
-            <br/><br/>
+
+            <br />
+            <br />
           </div>
-          <p style={{
-    fontFamily: 'Times New Roman, Serif',
-    fontSize: '18px',
-    lineHeight: '1.6',
-    color: '#24086b',
-    textAlign: 'justify',
-    padding: '20px',
-    borderRadius: '8px',
-    
-    margin: '20px 0'
-}}>
-    Immerse your senses in the delectable world of our cakes. From the rich and honey-infused
-    layers of the "Special Honey Cake" to the indulgent delight of the "Chocolate Cupcake," 
-    and the timeless simplicity of the "Glazed Donut," our offerings cater to every palate. 
-    Each creation is a masterpiece, crafted with passion and precision. 
-    Explore our diverse range, where every bite tells a unique story of flavor and quality. 
-    Elevate your taste experience with our exquisite cakes that promise moments of sheer bliss.
-</p>
+          <p
+            style={{
+              fontFamily: "Times New Roman, Serif",
+              fontSize: "18px",
+              lineHeight: "1.6",
+              color: "#24086b",
+              textAlign: "justify",
+              padding: "20px",
+              borderRadius: "8px",
 
-
+              margin: "20px 0",
+            }}
+          >
+            Immerse your senses in the delectable world of our cakes. From the
+            rich and honey-infused layers of the "Special Honey Cake" to the
+            indulgent delight of the "Chocolate Cupcake," and the timeless
+            simplicity of the "Glazed Donut," our offerings cater to every
+            palate. Each creation is a masterpiece, crafted with passion and
+            precision. Explore our diverse range, where every bite tells a
+            unique story of flavor and quality. Elevate your taste experience
+            with our exquisite cakes that promise moments of sheer bliss.
+          </p>
 
           {/* Additional variety items */}
-          
 
           {/* Additional container box for other types of cakes */}
           <div className="container-variety">
-
-          <div className="variety-item">
-            <img src="/cakes/honeycake2.jpg" alt="Special Honey Cake" />
-            <div className="inner-box">
-              <h3>Special Honey Cake</h3>
-              <p className="para">
-                Indulge in the rich flavor of our Special Honey Cake. Made with
-                the finest honey, this cake is a perfect blend of sweetness and
-                decadence.
-              </p>
+            <div className="variety-item">
+              <img src="/cakes/honeycake2.jpg" alt="Special Honey Cake" />
+              <div className="inner-box">
+                <h3>Special Honey Cake</h3>
+                <p className="para">
+                  Indulge in the rich flavor of our Special Honey Cake. Made
+                  with the finest honey, this cake is a perfect blend of
+                  sweetness and decadence.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="variety-item">
-            <img src="/cakes/cupcake1.jpg" alt="Chocolate Cupcake" />
-            <div className="inner-box">
-              <h3>Chocolate Cupcake</h3>
-              <p className="para">
-                Satisfy your chocolate cravings with our delectable Chocolate
-                Cupcake. Each bite is a heavenly experience of cocoa goodness.
-              </p>
+            <div className="variety-item">
+              <img src="/cakes/cupcake1.jpg" alt="Chocolate Cupcake" />
+              <div className="inner-box">
+                <h3>Chocolate Cupcake</h3>
+                <p className="para">
+                  Satisfy your chocolate cravings with our delectable Chocolate
+                  Cupcake. Each bite is a heavenly experience of cocoa goodness.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="variety-item">
-            <img src="/cakes/donut1.jpg" alt="Glazed Donut" />
-            <div className="inner-box">
-              <h3>Glazed Donut</h3>
-              <p className="para">
-                Enjoy the simplicity of our Glazed Donut. Light, fluffy, and
-                coated with a sweet glaze, it's a classic treat for any occasion.
-              </p>
+            <div className="variety-item">
+              <img src="/cakes/donut1.jpg" alt="Glazed Donut" />
+              <div className="inner-box">
+                <h3>Glazed Donut</h3>
+                <p className="para">
+                  Enjoy the simplicity of our Glazed Donut. Light, fluffy, and
+                  coated with a sweet glaze, it's a classic treat for any
+                  occasion.
+                </p>
+              </div>
             </div>
-          </div>
-            
           </div>
         </div>
 
-        <br/>
+        <br />
         <a href="/products" className="btnSecondary">
           Explore More
         </a>
       </section>
-   <section className="section">
+      <section className="section">
+        <h2
+          style={{
+            fontFamily: "Times New Roman, Serif",
+            fontSize: "30px",
+            lineHeight: "1.6",
+            color: "#555",
+            backgroundColor: "#F8F1F1",
+            textAlign: "center",
+            borderRadius: "8px",
+            margin: "5px 0",
+          }}
+        >
+          Our Facilities
+        </h2>
 
-   <h2 style={{
-    fontFamily: 'Times New Roman, Serif',
-    fontSize: '30px',
-    lineHeight: '1.6',
-    color: '#555',
-    backgroundColor: '#F8F1F1',
-    textAlign: 'center',
-    borderRadius: '8px',
-    margin: '5px 0'
-}} >Our Facilities</h2>
-  
+        <div className="facilityGrid">
+          <div className="facilityItem">
+            <img src="/cakes/cake1.jpg" alt="Online Ordering" />
+            <div className="facilityContent">
+              <p>Convenient Online Ordering</p>
+            </div>
+          </div>
 
-  <div className="facilityGrid">
-    <div className="facilityItem">
-      <img src="/cakes/cake1.jpg" alt="Online Ordering" />
-      <div className="facilityContent">
-        <p>Convenient Online Ordering</p>
-      </div>
-    </div>
+          <div className="facilityItem">
+            <img src="/cakes/promo3.png" alt="Special Promotions" />
+            <div className="facilityContent">
+              <p>Exclusive Special Promotions</p>
+            </div>
+          </div>
 
-    <div className="facilityItem">
-      <img src="/cakes/promo3.png" alt="Special Promotions" />
-      <div className="facilityContent">
-        <p>Exclusive Special Promotions</p>
-      </div>
-    </div>
-
-    <div className="facilityItem">
-      <img src="/cakes/promo2.png" alt="Honey Loyalty Program" />
-      <div className="facilityContent">
-        <p>Honey-themed Loyalty Program</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+          <div className="facilityItem">
+            <img src="/cakes/promo2.png" alt="Honey Loyalty Program" />
+            <div className="facilityContent">
+              <p>Honey-themed Loyalty Program</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="section">
         <h2>Customize Your Sweet Experience</h2>
         <p className="para">
-          Create a personalized sweet experience by customizing your honey-infused
-          cakes for special occasions. From birthdays to weddings, we turn your
-          moments into delicious memories.
+          Create a personalized sweet experience by customizing your
+          honey-infused cakes for special occasions. From birthdays to weddings,
+          we turn your moments into delicious memories.
         </p>
         <a href="/custom-cakes" className="btnSecondary">
           Customize Your Cake
         </a>
-
       </section>
 
       <section className="section">
         <h2>Contactless Sweetness</h2>
         <p className="para">
-          In our commitment to your safety, we offer contactless delivery options
-          for all our treats. Enjoy the sweetness of Honey Drops Bakery from the
-          comfort of your home.
+          In our commitment to your safety, we offer contactless delivery
+          options for all our treats. Enjoy the sweetness of Honey Drops Bakery
+          from the comfort of your home.
         </p>
         <a href="/delivery" className="btnSecondary">
           Explore Delivery Options
@@ -317,21 +336,21 @@ that celebrate the natural sweetness of honey in every bite..
 function Footer() {
   const styles = {
     footer: {
-      backgroundColor: '#333',
-      color: '#fff',
-      padding: '30px 20px',
-      marginTop: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      flexWrap: 'wrap',
+      backgroundColor: "#333",
+      color: "#fff",
+      padding: "30px 20px",
+      marginTop: "20px",
+      display: "flex",
+      justifyContent: "space-between",
+      flexWrap: "wrap",
     },
     section: {
-      marginBottom: '20px',
-      flex: '1',
-      minWidth: '200px',
+      marginBottom: "20px",
+      flex: "1",
+      minWidth: "200px",
     },
     icon: {
-      marginRight: '10px',
+      marginRight: "10px",
     },
   };
 
@@ -340,21 +359,27 @@ function Footer() {
       <div style={styles.section}>
         <h4>Contact Us</h4>
         <p>
-          <FontAwesomeIcon icon={faEnvelope} style={styles.icon} /> muhamedaljasar@gmail.com
+          <FontAwesomeIcon icon={faEnvelope} style={styles.icon} />{" "}
+          muhamedaljasar@gmail.com
         </p>
         <p>
           <FontAwesomeIcon icon={faPhone} style={styles.icon} /> 0766445386
         </p>
         <p>
-          <FontAwesomeIcon icon={faMapMarker} style={styles.icon} /> Kundumadu, Pottuvil-08
+          <FontAwesomeIcon icon={faMapMarker} style={styles.icon} /> Kundumadu,
+          Pottuvil-08
         </p>
       </div>
 
       <div style={styles.section}>
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/sendemail">Contact</a></li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/sendemail">Contact</a>
+          </li>
           {/* Add more links as needed */}
         </ul>
       </div>
@@ -362,13 +387,25 @@ function Footer() {
       <div style={styles.section}>
         <h4>Follow Us</h4>
         <div>
-          <a href="https://web.facebook.com/profile.php?id=61555952199751/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://web.facebook.com/profile.php?id=61555952199751/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faFacebook} size="2x" style={styles.icon} />
           </a>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faTwitter} size="2x" style={styles.icon} />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} size="2x" style={styles.icon} />
           </a>
         </div>

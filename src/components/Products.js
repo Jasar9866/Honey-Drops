@@ -105,7 +105,7 @@ const Products = () => {
       </section>
 
       <section className="section variety-section">
-      <h2
+        <h2
           style={{
             fontFamily: "Arial, sans-serif",
             fontSize: "30px",
@@ -199,9 +199,8 @@ const Products = () => {
         </a>
       </section>
 
-
       <section className="section variety-section">
-      <h2
+        <h2
           style={{
             fontFamily: "Arial, sans-serif",
             fontSize: "30px",
@@ -295,9 +294,8 @@ const Products = () => {
         </a>
       </section>
 
-
       <section className="section variety-section">
-      <h2
+        <h2
           style={{
             fontFamily: "Arial, sans-serif",
             fontSize: "30px",
@@ -390,7 +388,6 @@ const Products = () => {
           Back to home
         </a>
       </section>
-
     </div>
   );
 };
