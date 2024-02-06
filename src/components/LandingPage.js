@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./LandingPage.css"; // Update the path based on your project structure
+import "./LandingPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -44,7 +44,7 @@ const LandingPage = () => {
   const styles = {
     sliderContainer: {
       position: "relative",
-      marginBottom: "20px", // Adjust margin as needed
+      marginBottom: "20px",
     },
     blurredImage: {
       position: "absolute",
@@ -53,7 +53,7 @@ const LandingPage = () => {
       transform: "translateX(-50%)",
       width: "100%",
       height: "100%",
-      filter: "blur(10px)", // Adjust the blur effect as needed
+      filter: "blur(10px)",
       zIndex: -1,
     },
   };
@@ -95,7 +95,7 @@ const LandingPage = () => {
                   alt={`Blurred Cake ${index + 2}`}
                   style={{
                     ...styles.blurredImage,
-                    filter: "blur(10px)", // Adjust the blur effect as needed
+                    filter: "blur(10px)",
                   }}
                 />
               )}
@@ -176,7 +176,6 @@ const LandingPage = () => {
           offerings below:
         </p>
 
-        {/* Variety of cakes, cupcakes, and donuts */}
         <div className="variety-grid">
           <div className="variety-item-1">
             <img src="/cakes/commoncake.jpg" alt="Special Honey Cake" />
@@ -207,9 +206,6 @@ const LandingPage = () => {
             with our exquisite cakes that promise moments of sheer bliss.
           </p>
 
-          {/* Additional variety items */}
-
-          {/* Additional container box for other types of cakes */}
           <div className="container-variety">
             <div className="variety-item">
               <img src="/cakes/honeycake2.jpg" alt="Special Honey Cake" />
@@ -380,7 +376,6 @@ function Footer() {
           <li>
             <a href="/sendemail">Contact</a>
           </li>
-          {/* Add more links as needed */}
         </ul>
       </div>
 
