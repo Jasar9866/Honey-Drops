@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch, faList, faEnvelope, faCog } from '@fortawesome/free-solid-svg-icons';
 import { Navbar, Nav } from 'react-bootstrap';
 
-import logo from './logo.png'; // Adjust the path to your logo
+import logo from './logo.png'; 
 
 const SideNavbar = () => {
   const styles = {
@@ -22,11 +22,11 @@ const SideNavbar = () => {
     },
     logoContainer: {
       marginBottom: '20px',
-      borderRadius: '50%', // Apply border-radius for a round shape
-      overflow: 'hidden', // Ensure the border-radius works
-      width: '70%', // Adjust the width as needed
-      height: '70%', // Adjust the height as needed
-      border: '5px solid #D3D3D3', // Add a border to create a double circle effect
+      borderRadius: '50%',
+      overflow: 'hidden',
+      width: '70%',
+      height: '70%', 
+      border: '5px solid #D3D3D3', 
     },
     logoImg: {
       width: '100%',
@@ -61,7 +61,7 @@ const SideNavbar = () => {
         <Nav.Link as={Link} to="/" style={styles.navLink}>
           <FontAwesomeIcon icon={faHome} style={styles.icon} /> Home
         </Nav.Link>
-        <Nav.Link as={Link} to="/search" style={styles.navLink}>
+        <Nav.Link as={Link} to="#" style={styles.navLink}>
           <FontAwesomeIcon icon={faSearch} style={styles.icon} /> Search
         </Nav.Link>
         <Nav.Link as={Link} to="/products" style={styles.navLink}>

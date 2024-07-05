@@ -54,7 +54,6 @@ const Navbar = () => {
           <Link to="/sendemail" style={styles.link}>
             Contact
           </Link>
-          {/* Add more links as needed */}
         </div>
       </nav>
     </div>

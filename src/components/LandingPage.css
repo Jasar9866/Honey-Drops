@@ -121,6 +121,11 @@
 
 .btnSecondary {
   background-color: #0b2952;
-  color: #fff;
+  color: #f8f8f8;
   text-decoration: none;
+}
+
+.btnSecondary:hover {
+  background-color: #1e2ebe; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
 }
